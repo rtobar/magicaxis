@@ -9,3 +9,4 @@ Description: Functions to make useful (and pretty) plots for scientific plotting
 License: GPL-3
 Suggests: imager, fst
 Imports: grDevices, graphics, stats, celestial (>= 1.4.1), MASS, plotrix, sm, mapproj, RANN
+SystemRequirements: X11
