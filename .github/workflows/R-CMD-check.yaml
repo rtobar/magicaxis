@@ -2,9 +2,6 @@
 # https://community.rstudio.com/new-topic?category=Package%20development&tags=github-actions
 on:
   push:
-    branches:
-      - main
-      - master
   pull_request:
     branches:
       - main
@@ -48,6 +45,7 @@ jobs:
         with:
           extra-packages: any::rcmdcheck
           needs: check
+          cache: false
 
       - uses: r-lib/actions/check-r-package@v2
         with:
